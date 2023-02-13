@@ -123,10 +123,10 @@ const createMap = (data1, data2) => {
                 }
 
                 if(is_legal){
-                    return "green";
+                    return "black";
                 }
                 else{
-                    return "red";
+                    return "white";
                 }
 
 
@@ -135,12 +135,12 @@ const createMap = (data1, data2) => {
 
         let container = d3.select("body").append("div");
 
-        let square_green = container.append("div")
+        let square_black = container.append("div")
             .style("width", "100px")
             .style("height", "50px")
             .style("margin-left", "50px")
             .style("margin-top",  "-100px")
-            .style("background-color", "green");
+            .style("background-color", "black");
 
         let text_l1 = container.append("p")
             .style("margin-left", "160px")
@@ -148,12 +148,12 @@ const createMap = (data1, data2) => {
             .style("color", "black")
             .text("Cannabis is Legal");
 
-        let square_red = container.append("div")
+        let square_white = container.append("div")
             .style("width", "100px")
             .style("height", "50px")
             .style("margin-left", "50px")
             .style("margin-top",  "-120px")
-            .style("background-color", "red");
+            .style("background-color", "white");
 
         let text_l2 = container.append("p")
             .style("margin-left", "160px")
@@ -267,10 +267,10 @@ const createMap = (data1, data2) => {
                 }
 
                 if(is_legal){
-                    return "green";
+                    return "black";
                 }
                 else{
-                    return "red";
+                    return "white";
                 }
 
             })
